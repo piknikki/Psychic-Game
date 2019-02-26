@@ -1,4 +1,4 @@
-# Pyschic-Game
+# Psychic-Game
 Letter guessing game, javascript project
 
 In this game, you will try to guess what letter the computer has randomly chosen for you.  So you have a 1/26th chance of guessing correctly on the first try!  
