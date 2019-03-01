@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: black;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cover-container {
+    width: 100%;
+}
+
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+
+
+
+.cover-container {
+    background-image: url("../images/bgpsych.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+}

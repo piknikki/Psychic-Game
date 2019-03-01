@@ -32,7 +32,7 @@ function updateGuesses() {
 
 // run function to generate a letter
 randomLetterGenerator();
-
+console.log(randomLetter);
 
 // update guesses every time a guess is made
 updateGuesses();
@@ -50,7 +50,7 @@ document.onkeyup = function(event) {
         guessesSoFarArray = [];
         updateScore();
         randomLetterGenerator();
-
+        console.log(randomLetter);
 
     } else {
         alert("How about a NOPE?! Try again.");
@@ -65,10 +65,36 @@ document.onkeyup = function(event) {
             guessesSoFarArray = [];
             updateScore();
             randomLetterGenerator();
-
+            console.log(randomLetter);
         }
     }
 
 
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
