@@ -11,7 +11,6 @@ function randomLetterGenerator() {
     // pick random letter
     randomLetter = alpha[Math.floor(Math.random() * 26) + 1];
     return randomLetter;
-
 }
 
 
@@ -20,7 +19,6 @@ function updateScore() {
     document.querySelector("#losses-text").innerHTML = "Losses: " + lossesCount;
     document.querySelector("#userchoice-text").innerHTML = "Guesses Left: " + guessesLeftCount;
     document.querySelector("#guesses-text").innerHTML = "Your Guesses so far: " + guessesSoFarArray;
-
 }
 
 function updateGuesses() {
@@ -29,10 +27,9 @@ function updateGuesses() {
 
 }
 
-
 // run function to generate a letter
 randomLetterGenerator();
-
+console.log(randomLetterGenerator());
 
 // update guesses every time a guess is made
 updateGuesses();
@@ -44,7 +41,7 @@ document.onkeyup = function(event) {
     var userGuess = event.key.toLowerCase();
 
     if (userGuess === randomLetter) {
-        alert("Booyah!  You guessed it!");
+
         winsCount++;
         guessesLeftCount = 10;
         guessesSoFarArray = [];
@@ -53,7 +50,7 @@ document.onkeyup = function(event) {
 
 
     } else {
-        alert("How about a NOPE?! Try again.");
+
         guessesSoFarArray.push(userGuess);
         updateGuesses();
         wrongCount++;
